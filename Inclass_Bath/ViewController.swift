@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Login-ViewController.swift
 //  Inclass_Bath
 //
 //  Created by Yu Shao on 16/5/24.
@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.tintColor = UIColor.blackColor();
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

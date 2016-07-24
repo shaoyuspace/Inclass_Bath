@@ -9,12 +9,49 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource{
 
     var window: UIWindow?
 
 
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
+        let userInfo = RCUserInfo()
+        
+        let user = Database.getuser(userId)
+        userInfo.userId=userId;
+        userInfo.name=user._Username;
+        userInfo.portraitUri=user._Pic;
+        print(user._Pic)
+        return completion(userInfo)
+    }
+    
+    func connectIMServer(completion:()->Void,user_info:User)
+    {
+        
+        RCIM.sharedRCIM().initWithAppKey("pkfcgjstffr88")
+        RCIM.sharedRCIM().connectWithToken(user_info._Usertoken,
+            success: { (userId) -> Void in print(userId)
+        let currentUserInfo=RCUserInfo(userId:user_info._Usrid,name:user_info._Username,portrait: user_info._Pic)
+            RCIMClient.sharedRCIMClient().currentUserInfo=currentUserInfo
+            completion()
+            //print("连接成功2")
+            },
+            error: { (status) -> Void in
+                print("登陆的错误码为:\(status.rawValue)")
+            }, tokenIncorrect: {
+                //token过期或者不正确。
+                //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
+                //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
+                print("token错误")
+        })
+
+        
+    }
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        RCIM.sharedRCIM().userInfoDataSource=self
+
         // Override point for customization after application launch.
         return true
     }
