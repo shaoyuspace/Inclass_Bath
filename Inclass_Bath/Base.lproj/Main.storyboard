@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vM8-Aj-D2C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pPI-QU-yjL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -99,6 +99,40 @@
             </objects>
             <point key="canvasLocation" x="-4251" y="-4673"/>
         </scene>
+        <!--Add_TimeTable-->
+        <scene sceneID="bX1-fI-mTq">
+            <objects>
+                <viewController id="WEg-Wd-dFU" customClass="AddtimetableViewController" customModule="Inclass_Bath" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YGP-ra-0BB"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQy-Da-D4M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fHN-cB-1xX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndg-bn-lon">
+                                <rect key="frame" x="0.0" y="138" width="320" height="30"/>
+                                <color key="backgroundColor" red="0.87074607329842935" green="0.87074607329842935" blue="0.87074607329842935" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="By Iphone"/>
+                                <connections>
+                                    <action selector="Click:" destination="WEg-Wd-dFU" eventType="touchUpInside" id="qtU-Ev-0wm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ndg-bn-lon" secondAttribute="trailing" id="3ek-6p-1hQ"/>
+                            <constraint firstItem="Ndg-bn-lon" firstAttribute="leading" secondItem="fHN-cB-1xX" secondAttribute="leading" id="Co7-fd-ypD"/>
+                            <constraint firstItem="Ndg-bn-lon" firstAttribute="top" secondItem="YGP-ra-0BB" secondAttribute="bottom" constant="74" id="Zzp-7v-iMm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add_TimeTable" id="Rnc-LG-RXl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T71-tP-O0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2605" y="-3886"/>
+        </scene>
         <!--Class_Information-->
         <scene sceneID="akK-Ec-j4a">
             <objects>
@@ -132,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgk-IW-SbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2023" y="-3964"/>
+            <point key="canvasLocation" x="-1159" y="-2248"/>
         </scene>
         <!--Ument-->
         <scene sceneID="GlJ-gy-dpf">
@@ -297,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l75-np-vP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3220" y="-1033"/>
+            <point key="canvasLocation" x="-3780" y="-1113"/>
         </scene>
         <!--Sign-Up-One-->
         <scene sceneID="crr-Xp-74O">
@@ -606,7 +640,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWG-sp-UnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4547" y="-2573"/>
+            <point key="canvasLocation" x="-4387" y="-2037"/>
         </scene>
         <!--TimeTable-->
         <scene sceneID="Avn-3a-XTn">
@@ -628,7 +662,7 @@
             </objects>
             <point key="canvasLocation" x="-3714" y="-3852"/>
         </scene>
-        <!--Timetable View Controller-->
+        <!--Timetable-->
         <scene sceneID="ucr-7o-Etc">
             <objects>
                 <viewController id="B30-mG-b1X" customClass="TimetableViewController" customModule="Inclass_Bath" customModuleProvider="target" sceneMemberID="viewController">
@@ -780,10 +814,13 @@
                             <constraint firstItem="oqk-RQ-igW" firstAttribute="baseline" secondItem="Y5D-me-4eD" secondAttribute="baseline" id="no2-F3-b32"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hUp-rf-8so">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="Timetable" id="hUp-rf-8so">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="cOD-kZ-YT5"/>
+                            <barButtonItem systemItem="add" id="cOD-kZ-YT5">
+                                <connections>
+                                    <segue destination="WEg-Wd-dFU" kind="push" id="4aW-rI-BXr"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem style="plain" id="cw7-dz-7q5">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0SB-Wx-IRM">
                                     <rect key="frame" x="237.5" y="7" width="30" height="30"/>
@@ -832,7 +869,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="P3U-Vv-JJD"/>
-        <segue reference="MyB-eS-0SM"/>
+        <segue reference="LEB-Jt-URj"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47520884390000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

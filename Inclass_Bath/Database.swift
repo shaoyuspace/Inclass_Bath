@@ -12,12 +12,6 @@ class Database
 {
     
     
-    
-   
-    
-    
-    
-    
     static func storeUser (email:String, password:String, gender:String, realname:String, bdate:String, username:String)->String
     {
         var response: NSURLResponse?

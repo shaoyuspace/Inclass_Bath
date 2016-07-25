@@ -54,6 +54,9 @@
 		4DA636AD1CF51D3800B00DB0 /* RegisterOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA636AC1CF51D3800B00DB0 /* RegisterOneViewController.swift */; };
 		4DA636AF1CF524E100B00DB0 /* RegisterTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA636AE1CF524E100B00DB0 /* RegisterTwoViewController.swift */; };
 		4DA636B11CF5300700B00DB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA636B01CF5300700B00DB0 /* User.swift */; };
+		4DE0AC0E1D458DBD005E9935 /* AddtimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0AC0D1D458DBD005E9935 /* AddtimetableViewController.swift */; };
+		4DE0AC101D45AB92005E9935 /* Localfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0AC0F1D45AB92005E9935 /* Localfiles.swift */; };
+		4DE0AC121D45AF16005E9935 /* Class_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0AC111D45AF16005E9935 /* Class_Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +133,9 @@
 		4DA636AE1CF524E100B00DB0 /* RegisterTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoViewController.swift; sourceTree = "<group>"; };
 		4DA636B01CF5300700B00DB0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		4DA636B41CF53CEF00B00DB0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4DE0AC0D1D458DBD005E9935 /* AddtimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddtimetableViewController.swift; sourceTree = "<group>"; };
+		4DE0AC0F1D45AB92005E9935 /* Localfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localfiles.swift; sourceTree = "<group>"; };
+		4DE0AC111D45AF16005E9935 /* Class_Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class_Time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				4D10AF8C1D3BDE150067B4F4 /* Database.swift */,
+				4DE0AC0F1D45AB92005E9935 /* Localfiles.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -290,6 +297,7 @@
 			children = (
 				4DA636B01CF5300700B00DB0 /* User.swift */,
 				4D0317A11D41BB0D003F643B /* Message.swift */,
+				4DE0AC111D45AF16005E9935 /* Class_Time.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -304,6 +312,7 @@
 				4DA636AE1CF524E100B00DB0 /* RegisterTwoViewController.swift */,
 				4D4F1F591D3C298300E7F30F /* TabBarController.swift */,
 				4D03179E1D41ADE6003F643B /* MessageViewController.swift */,
+				4DE0AC0D1D458DBD005E9935 /* AddtimetableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -446,11 +455,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE0AC0E1D458DBD005E9935 /* AddtimetableViewController.swift in Sources */,
 				4DA636AB1CF51C2D00B00DB0 /* LoginViewController.swift in Sources */,
 				4DA6367F1CF5037100B00DB0 /* ViewController.swift in Sources */,
 				4DA636B11CF5300700B00DB0 /* User.swift in Sources */,
 				4D4F1F5A1D3C298300E7F30F /* TabBarController.swift in Sources */,
+				4DE0AC121D45AF16005E9935 /* Class_Time.swift in Sources */,
 				4DA6367D1CF5037100B00DB0 /* AppDelegate.swift in Sources */,
+				4DE0AC101D45AB92005E9935 /* Localfiles.swift in Sources */,
 				4DA636AD1CF51D3800B00DB0 /* RegisterOneViewController.swift in Sources */,
 				4D10AF8D1D3BDE150067B4F4 /* Database.swift in Sources */,
 				4D0317A01D41ADE6003F643B /* MessageViewController.swift in Sources */,
