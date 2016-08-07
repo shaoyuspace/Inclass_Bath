@@ -27,7 +27,7 @@ struct Localfiles
         let save: NSMutableData = NSMutableData ()
         
         let  archiver =  NSKeyedArchiver (forWritingWithMutableData: save)
-        archiver.encodeObject(clist, forKey:  "userList" )
+        archiver.encodeObject(clist, forKey:  "classtimeList" )
         archiver.finishEncoding()
         save.writeToFile(path, atomically: true)
         
@@ -58,11 +58,14 @@ struct Localfiles
             //解码器
             let  unarchiver =  NSKeyedUnarchiver (forReadingWithData: data!)
             //通过归档时设置的关键字Checklist还原lists
-            let userList = unarchiver.decodeObjectForKey( "userList" )as! [Class_Time]
+            let userList = unarchiver.decodeObjectForKey( "classtimeList" )as! [Class_Time]
             //结束解码
             for u in userList
             {
-                print(u.name);
+//                print(u.name);
+//                print(u.stime);
+//                print(u.etime);
+//                print(u.location);
                 
             }
             

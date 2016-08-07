@@ -27,6 +27,8 @@ class TimetableViewController: UIViewController,UITableViewDataSource,UITableVie
         
         timetable.delegate=self;
         timetable.dataSource=self;
+        //Localfiles.loadData("ys823");
+        
         
         
         

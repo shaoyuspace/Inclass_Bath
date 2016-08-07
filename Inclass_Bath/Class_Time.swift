@@ -11,13 +11,14 @@ class Class_Time: NSObject {
     var name:String
     var stime:NSDate
     var etime:NSDate
+    var location:String
     
     //构造方法
-    init(name:String,stime:NSDate,etime:NSDate){
+    init(name:String,stime:NSDate,etime:NSDate,location:String){
         self.name = name
         self.stime = stime
         self.etime = etime;
-        
+        self.location = location;
         super.init()
     }
     
@@ -26,6 +27,7 @@ class Class_Time: NSObject {
         self.name=aDecoder.decodeObjectForKey("name") as! String
         self.stime=aDecoder.decodeObjectForKey("stime") as! NSDate
         self.etime=aDecoder.decodeObjectForKey("etime") as! NSDate
+        self.location=aDecoder.decodeObjectForKey("location") as! String
     }
     
     //编码成object
@@ -33,6 +35,7 @@ class Class_Time: NSObject {
         aCoder.encodeObject(name,forKey:"name")
         aCoder.encodeObject(stime,forKey:"stime")
         aCoder.encodeObject(etime,forKey:"etime")
+        aCoder.encodeObject(location,forKey:"location")
         
         
     }
