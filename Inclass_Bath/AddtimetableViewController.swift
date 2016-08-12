@@ -8,6 +8,7 @@
 
 import UIKit
 import EventKit
+import Alamofire
 
 class AddtimetableViewController: UIViewController {
     @IBAction func Click(sender: AnyObject) {
@@ -42,7 +43,7 @@ class AddtimetableViewController: UIViewController {
                     
                     // 获取所有的事件（前后90天）
                     let startDate=NSDate().dateByAddingTimeInterval(-3600*24*180)
-                    let endDate=NSDate().dateByAddingTimeInterval(3600*24*10)
+                    let endDate=NSDate().dateByAddingTimeInterval(3600*24*180)
                     let predicate2 = eventStore.predicateForEventsWithStartDate(startDate,
                         endDate: endDate, calendars: cans1)
                     
@@ -52,7 +53,7 @@ class AddtimetableViewController: UIViewController {
                     var class_List = [Class_Time]()
                     if eV != nil {
                         for i in eV {
-                            print(i.location);
+                            //print(i.location);
                             let ct = Class_Time(name: i.title,stime: i.startDate,etime: i.endDate,location:i.location!as String);
                          //print(ct.name);
                         
@@ -61,10 +62,11 @@ class AddtimetableViewController: UIViewController {
 
                         }
                     }
-                    Localfiles.delete("ys823.plist.plist")
-                    Localfiles.delete("test_ys823.plist")
-                    Localfiles.savetimetable("ys824", clist: class_List)
-                    Localfiles.loadData("ys824");
+
+
+                    Localfiles.savetimetable("ys825", clist: class_List)
+                    Localfiles.loadData("ys825");
+                    self.uploadfile()
                     //Localfiles.delete("ys823.plist")
                 }
                 else
@@ -78,7 +80,36 @@ class AddtimetableViewController: UIViewController {
         })
         
     }
+    func uploadfile()
+    {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("ys825.plist")
+        let fileURL:NSURL = NSURL.init(fileURLWithPath: path)
+       
+        
+        Alamofire.upload(
+            .POST,
+            "http://47.88.189.123/upload2.php",
+            multipartFormData: { multipartFormData in
 
+                multipartFormData.appendBodyPart(fileURL: fileURL, name: "file")
+            },
+            encodingCompletion: { encodingResult in
+                print("file is alraldy to upload")
+                switch encodingResult {
+                case .Success(let upload, _, _):
+                    upload.responseString { response in
+                        print(response)
+                    }
+                case .Failure(let encodingError):
+                    print(encodingError)
+                }
+            }
+        )
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

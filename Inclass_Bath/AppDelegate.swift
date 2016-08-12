@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource{
         return completion(userInfo)
     }
     
+
+    
     func connectIMServer(completion:()->Void,user_info:User)
     {
         

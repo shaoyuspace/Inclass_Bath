@@ -22,6 +22,26 @@ class Class_Time: NSObject {
         super.init()
     }
     
+    func getstime_string()->String
+    {
+    
+    let calendar = NSCalendar.currentCalendar()
+    let dateComponents = calendar.components([NSCalendarUnit.Day, NSCalendarUnit.Month, NSCalendarUnit.Year, NSCalendarUnit.WeekOfYear, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond], fromDate: stime)
+    let result = "\(dateComponents.hour)" + ":"+"\(dateComponents.minute)";
+    return result;
+    }
+    
+    func getetime_string()->String
+    {
+        
+        let calendar = NSCalendar.currentCalendar()
+        let dateComponents = calendar.components([NSCalendarUnit.Day, NSCalendarUnit.Month, NSCalendarUnit.Year, NSCalendarUnit.WeekOfYear, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond], fromDate: etime)
+        let result = "\(dateComponents.hour)" + ":"+"\(dateComponents.minute)";
+        return result;
+        
+        
+    }
+    
     //从nsobject解析回来
     init(coder aDecoder:NSCoder!){
         self.name=aDecoder.decodeObjectForKey("name") as! String

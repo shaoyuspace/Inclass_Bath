@@ -44,8 +44,9 @@ struct Localfiles
         }
     }
     
-    static func  loadData(filename:String) {
+    static func  loadData(filename:String)-> [Class_Time] {
         //获取本地数据文件地址
+        var classtime = [Class_Time]()
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("\(filename).plist")
@@ -58,19 +59,28 @@ struct Localfiles
             //解码器
             let  unarchiver =  NSKeyedUnarchiver (forReadingWithData: data!)
             //通过归档时设置的关键字Checklist还原lists
-            let userList = unarchiver.decodeObjectForKey( "classtimeList" )as! [Class_Time]
+             classtime = unarchiver.decodeObjectForKey( "classtimeList" )as! [Class_Time]
             //结束解码
-            for u in userList
-            {
+            
+
+            
+            //appDelgate?.setallclasstime(classtime)
+//            for u in userList
+//            {
 //                print(u.name);
 //                print(u.stime);
 //                print(u.etime);
 //                print(u.location);
-                
-            }
+//                
+//            }
             
             unarchiver.finishDecoding()
+            return classtime;
         }
+        else
+        {
+            return
+            classtime};
     }
     
     
