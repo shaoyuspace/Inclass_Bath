@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFImageHelper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DatePickerDialog.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,15 +29,50 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZZRefresh-ZZRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZZRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0303BA263D653A70BF9375D23419D9D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F490F2D36D1831050350C1754B6461D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33229BA8D666833D22A703732D21B87C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BEC4466F48D5D2E50BE0179A3A925E63</key>
+		<key>D7DB3C7C21F358BD086BEE0414F21C69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBA6001481CEA0EBA031CC5C94508FAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E39D6B2A1A7FB2E4853337609EE7E2DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

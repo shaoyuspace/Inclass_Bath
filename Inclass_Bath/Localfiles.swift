@@ -32,6 +32,16 @@ struct Localfiles
         save.writeToFile(path, atomically: true)
         
     }
+    static func clear ()
+    {
+        let fileManager = NSFileManager.defaultManager()
+        let myDirectory = NSHomeDirectory() + "/Documents"
+        let fileArray:[AnyObject]? = fileManager.subpathsAtPath(myDirectory)
+        for fn in fileArray!{
+            delete(fn as! String)
+            //try! fileManager.removeItemAtPath(myDirectory + "/\(fn)")
+        }
+    }
     static func delete(s:String)
     {
         let fileManager = NSFileManager.defaultManager()
@@ -43,36 +53,29 @@ struct Localfiles
         try! fileManager.removeItemAtPath(srcUrl)
         }
     }
+    static func checkexit(s:String)->Bool
+    {
+        let homeDirectory = NSHomeDirectory()
+        let srcUrl = homeDirectory + "/Documents/"+s
+        let  defaultManager =  NSFileManager ()
+        return defaultManager.fileExistsAtPath(srcUrl)
+    }
     
     static func  loadData(filename:String)-> [Class_Time] {
-        //获取本地数据文件地址
+        //get local files
         var classtime = [Class_Time]()
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("\(filename).plist")
-        //声明文件管理器
         let  defaultManager =  NSFileManager ()
-        //通过文件地址判断数据文件是否存在
         if  defaultManager.fileExistsAtPath(path) {
-            //读取文件数据
+            //Read Data
             let  data =  NSData (contentsOfFile: path)
-            //解码器
+            //decoding
             let  unarchiver =  NSKeyedUnarchiver (forReadingWithData: data!)
-            //通过归档时设置的关键字Checklist还原lists
+            //Checklist lists
              classtime = unarchiver.decodeObjectForKey( "classtimeList" )as! [Class_Time]
-            //结束解码
-            
-
-            
-            //appDelgate?.setallclasstime(classtime)
-//            for u in userList
-//            {
-//                print(u.name);
-//                print(u.stime);
-//                print(u.etime);
-//                print(u.location);
-//                
-//            }
+            //end decoding
             
             unarchiver.finishDecoding()
             return classtime;
@@ -80,7 +83,8 @@ struct Localfiles
         else
         {
             return
-            classtime};
+            classtime
+        }
     }
     
     

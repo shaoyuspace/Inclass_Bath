@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ClassmatesViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Inclass_Bath.xcodeproj">
    </FileRef>
    <FileRef

@@ -7,13 +7,17 @@
 //
 
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource{
 
     var window: UIWindow?
+    var user: User?
 
-
+    func setuser(user_:User)
+    {
+        user=user_;
+    }
+    
     func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
         let userInfo = RCUserInfo()
         
@@ -21,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource{
         userInfo.userId=userId;
         userInfo.name=user._Username;
         userInfo.portraitUri=user._Pic;
-        print(user._Pic)
         return completion(userInfo)
     }
     
@@ -36,15 +39,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource{
         let currentUserInfo=RCUserInfo(userId:user_info._Usrid,name:user_info._Username,portrait: user_info._Pic)
             RCIMClient.sharedRCIMClient().currentUserInfo=currentUserInfo
             completion()
-            //print("连接成功2")
+            //print("successful")
             },
             error: { (status) -> Void in
-                print("登陆的错误码为:\(status.rawValue)")
+//                print("Error:\(status.rawValue)")
             }, tokenIncorrect: {
-                //token过期或者不正确。
-                //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
-                //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
-                print("token错误")
+              
         })
 
         

@@ -1,12 +1,24 @@
 PODS:
+  - AFImageHelper (3.0.2)
   - Alamofire (3.4.1)
+  - DatePickerDialog (1.1.4)
+  - MBProgressHUD (1.0.0)
+  - ZZRefresh (0.1.0)
 
 DEPENDENCIES:
+  - AFImageHelper (~> 3.0.2)
   - Alamofire (~> 3.4)
+  - DatePickerDialog (~> 1.1.3)
+  - MBProgressHUD (~> 1.0.0)
+  - ZZRefresh (~> 0.1.0)
 
 SPEC CHECKSUMS:
+  AFImageHelper: 77a89f76b410655928b757a36627a66c1eb67fc2
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  DatePickerDialog: f23eaadaba1177d7f60ad58a57f81071df856fc9
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ZZRefresh: d5423ec2190de6b9ec16a55cfb40635fbf85e814
 
-PODFILE CHECKSUM: eb61e437a4044f3c2a75dca7e7ff982f5cb8782b
+PODFILE CHECKSUM: f78e9b1ee42424c5764b4122d7864f5fca4b0907
 
 COCOAPODS: 1.0.1

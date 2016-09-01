@@ -11,14 +11,45 @@ import EventKit
 import Alamofire
 
 class AddtimetableViewController: UIViewController {
+    let uid = NSUserDefaults.standardUserDefaults().objectForKey("AutoLogin") as! String
+    var classlist = Set<String>()
     @IBAction func Click(sender: AnyObject) {
+        let appDelgate=UIApplication.sharedApplication().delegate as? AppDelegate
+        
+        if(appDelgate?.user?._Timetable == "1")
+        {
+            Localfiles.delete(uid);
+            Database.delete(uid);
+        }
+        else
+        {
+            appDelgate?.user?._Timetable = "1"
+            
+        }
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+            //处理耗时操作的代码块...
+            self.savetime();
+            
+            //操作完成，调用主线程来刷新界面
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        self.navigationController?.popToRootViewControllerAnimated(true)
+            })
+        })
+        
+        
+
+        
+        
+
+    }
+    
+    func savetime()
+    {
         let eventStore:EKEventStore = EKEventStore()
         eventStore.requestAccessToEntityType(.Event, completion: {
             granted, error in
             if (granted) && (error == nil) {
-                print("granted \(granted)")
-                print("error  \(error)")
-                
                 
                 let cans = eventStore.calendarsForEntityType(EKEntityType.Event)
                 
@@ -29,22 +60,24 @@ class AddtimetableViewController: UIViewController {
                     if(can.title == "University of Bath personal timetable - ys823")
                     {
                         
-                    //print("yes")
-                    cans1.append(can)
+                        cans1.append(can)
                     }
-
+                    
                 }
-                
-       
                 
                 
                 if(cans1.count != 0)
                 {
+                    let currentDate = NSDate()
+                    let dateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "yyyy"
+                    let year = dateFormatter.stringFromDate(currentDate)
+                    let dateAsString = "03-10-2016"
+                    dateFormatter.dateFormat = "dd-MM-yyyy"
+                    let startDate=dateFormatter.dateFromString(dateAsString);
                     
-                    // 获取所有的事件（前后90天）
-                    let startDate=NSDate().dateByAddingTimeInterval(-3600*24*180)
-                    let endDate=NSDate().dateByAddingTimeInterval(3600*24*180)
-                    let predicate2 = eventStore.predicateForEventsWithStartDate(startDate,
+                    let endDate=NSDate().dateByAddingTimeInterval(3600*24*360)
+                    let predicate2 = eventStore.predicateForEventsWithStartDate(startDate!,
                         endDate: endDate, calendars: cans1)
                     
                     let eV = eventStore.eventsMatchingPredicate(predicate2) as [EKEvent]!
@@ -53,21 +86,20 @@ class AddtimetableViewController: UIViewController {
                     var class_List = [Class_Time]()
                     if eV != nil {
                         for i in eV {
-                            //print(i.location);
-                            let ct = Class_Time(name: i.title,stime: i.startDate,etime: i.endDate,location:i.location!as String);
-                         //print(ct.name);
-                        
-                    class_List.append(ct);
                             
-
+                            let ct = Class_Time(name: i.title,stime: i.startDate,etime: i.endDate,location:i.location!as String);
+                            let classname = (i.title as NSString).substringToIndex(7) as String
+                            class_List.append(ct);
+                            self.classlist.insert(classname);
+                            
                         }
+                        
+                        Localfiles.savetimetable(self.uid, clist: class_List)
+                        Database.addclass(self.uid, classlist: self.classlist, Year: "2016-2017")
+                        Database.upload(self.uid+".plist")
+                        
                     }
-
-
-                    Localfiles.savetimetable("ys825", clist: class_List)
-                    Localfiles.loadData("ys825");
-                    self.uploadfile()
-                    //Localfiles.delete("ys823.plist")
+                    
                 }
                 else
                 {
@@ -75,42 +107,14 @@ class AddtimetableViewController: UIViewController {
                     print("can not find");
                     
                 }
-
+                
             }
         })
-        
     }
-    func uploadfile()
-    {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
-        let documentsDirectory = paths.objectAtIndex(0) as! NSString
-        let path = documentsDirectory.stringByAppendingPathComponent("ys825.plist")
-        let fileURL:NSURL = NSURL.init(fileURLWithPath: path)
-       
-        
-        Alamofire.upload(
-            .POST,
-            "http://47.88.189.123/upload2.php",
-            multipartFormData: { multipartFormData in
 
-                multipartFormData.appendBodyPart(fileURL: fileURL, name: "file")
-            },
-            encodingCompletion: { encodingResult in
-                print("file is alraldy to upload")
-                switch encodingResult {
-                case .Success(let upload, _, _):
-                    upload.responseString { response in
-                        print(response)
-                    }
-                case .Failure(let encodingError):
-                    print(encodingError)
-                }
-            }
-        )
-        
-    }
     
     override func viewDidLoad() {
+        //print(uid);
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

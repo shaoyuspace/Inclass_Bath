@@ -15,7 +15,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     private let defaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named:"BackGourod")!)
+        //Localfiles.clear();
         User_Password.delegate=self
         User_Email.delegate=self
         // Do any additional setup after loading the view, typically from a nib.
@@ -48,10 +48,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             let user = Database.login(User_Email.text!, password: User_Password.text!)
             if(user._Error == false)
             {
-                //user_=user;
-                defaults.setObject(user._Usrid, forKey: "AutoLogin")
+                defaults.setObject(user._Usrid , forKey: "AutoLogin")
                 let appDelgate=UIApplication.sharedApplication().delegate as? AppDelegate
-                
+                appDelgate?.setuser(user);
                 appDelgate?.connectIMServer({()->Void in print("连接成功")},user_info: user)
                 self.performSegueWithIdentifier("login11", sender: self)
                 
@@ -95,15 +94,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//
-//        if segue.identifier == "login11"
-//        {
-//            let vc = segue.destinationViewController as! TabBarController
-//            vc.Email = "abcs"
-//        }
-//        
-//    }
+
 
     
     

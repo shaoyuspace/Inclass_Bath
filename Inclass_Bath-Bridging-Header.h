@@ -3,3 +3,4 @@
 //
 
 #import <RongIMKit/RongIMKit.h>
+#import <MBProgressHUD/MBProgressHUD.h>

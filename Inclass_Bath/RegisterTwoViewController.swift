@@ -47,7 +47,7 @@ class RegisterTwoViewController: UIViewController,UITextFieldDelegate {
         let email_ = Email!
         let pas = Password!
         //print(bdateText)
-        _user=User(Email: email_,Password: pas,Gender: genderText,Realname: realname, Username: username_,Bdate: bdateText,Pic: "0",Usertoken: "0")
+        _user=User(Email: email_,Password: pas,Gender: genderText,Realname: realname, Username: username_,Bdate: bdateText,Pic: "0",Usertoken: "0",Timetable: "0")
         
         
         if( check(realname) == false || check (username_) == false )
@@ -60,8 +60,11 @@ class RegisterTwoViewController: UIViewController,UITextFieldDelegate {
         else
         {
             let uid = Database.storeUser((_user?._Email)!, password: (_user?._Password)!, gender: (_user?._Gender)!, realname: (_user?._Realname)!, bdate: (_user?._Bdate)!, username: (_user?._Realname)!)
-            
+          let user = Database.login((_user?._Email)!, password: (_user?._Password)!)
             defaults.setObject(uid, forKey: "AutoLogin")
+            let appDelgate=UIApplication.sharedApplication().delegate as? AppDelegate
+            appDelgate?.setuser(user);
+            appDelgate?.connectIMServer({()->Void in print("连接成功")},user_info: user)
             self.performSegueWithIdentifier("login12", sender: self)
             
             

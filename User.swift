@@ -18,6 +18,7 @@ struct User {
     var _Username:String = ""
     var _Pic:String=""
     var _Usertoken:String=""
+    var _Timetable:String=""
     var _Error = false;
     
     
@@ -31,7 +32,13 @@ struct User {
     {
         self._Error=error;
     }
-    init(Email:String,Password:String,Gender:String,Realname:String,Username:String,Bdate:String,Pic:String,Usertoken:String)
+    init (uid: String,username: String,pic: String)
+    {
+        self._Usrid = uid;
+        self._Username = username;
+        self._Pic = pic;
+    }
+    init(Email:String,Password:String,Gender:String,Realname:String,Username:String,Bdate:String,Pic:String,Usertoken:String,Timetable:String)
     {
         self._Email=Email
         self._Password=Password
@@ -41,7 +48,9 @@ struct User {
         self._Username=Username
         self._Pic=Pic
         self._Usertoken=Usertoken
+        self._Timetable=Timetable
                 
     }
+
 
 }

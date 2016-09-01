@@ -10,9 +10,12 @@
 		4D0317A01D41ADE6003F643B /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03179E1D41ADE6003F643B /* MessageViewController.swift */; };
 		4D0317A21D41BB0D003F643B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0317A11D41BB0D003F643B /* Message.swift */; };
 		4D10AF8D1D3BDE150067B4F4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D10AF8C1D3BDE150067B4F4 /* Database.swift */; };
+		4D29C14A1D7764470094294A /* ClasspageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D29C1491D7764470094294A /* ClasspageViewController.swift */; };
+		4D29C1541D77A2990094294A /* ClassuserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D29C1531D77A2990094294A /* ClassuserViewController.swift */; };
 		4D327DCE1D57F3B30014A3B5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4D327DCD1D57F3B30014A3B5 /* Podfile */; };
+		4D327DD01D60D6D70014A3B5 /* UmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D327DCF1D60D6D70014A3B5 /* UmentViewController.swift */; };
+		4D327DD41D60E63A0014A3B5 /* Ument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D327DD31D60E63A0014A3B5 /* Ument.swift */; };
 		4D4F1F581D3C26EF00E7F30F /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4F1F571D3C26EF00E7F30F /* TimetableViewController.swift */; };
-		4D4F1F5A1D3C298300E7F30F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4F1F591D3C298300E7F30F /* TabBarController.swift */; };
 		4D8E540B1D42D0BE0068B2D9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8E540A1D42D0BE0068B2D9 /* AssetsLibrary.framework */; };
 		4D8E540D1D42D0C60068B2D9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8E540C1D42D0C60068B2D9 /* AudioToolbox.framework */; };
 		4D8E540F1D42D0CF0068B2D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8E540E1D42D0CF0068B2D9 /* AVFoundation.framework */; };
@@ -55,6 +58,8 @@
 		4DA636AD1CF51D3800B00DB0 /* RegisterOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA636AC1CF51D3800B00DB0 /* RegisterOneViewController.swift */; };
 		4DA636AF1CF524E100B00DB0 /* RegisterTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA636AE1CF524E100B00DB0 /* RegisterTwoViewController.swift */; };
 		4DA636B11CF5300700B00DB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA636B01CF5300700B00DB0 /* User.swift */; };
+		4DC26CD51D6ECF1C000DA05C /* CustomPickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC26CD41D6ECF1C000DA05C /* CustomPickerDialog.swift */; };
+		4DDFA61E1D6E965400BE29CC /* OverlappingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFA61D1D6E965400BE29CC /* OverlappingClass.swift */; };
 		4DE0AC0E1D458DBD005E9935 /* AddtimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0AC0D1D458DBD005E9935 /* AddtimetableViewController.swift */; };
 		4DE0AC101D45AB92005E9935 /* Localfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0AC0F1D45AB92005E9935 /* Localfiles.swift */; };
 		4DE0AC121D45AF16005E9935 /* Class_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0AC111D45AF16005E9935 /* Class_Time.swift */; };
@@ -85,9 +90,12 @@
 		4D03179E1D41ADE6003F643B /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = ../../Xcode_exercise/Inclass_Bath/Inclass_Bath/MessageViewController.swift; sourceTree = "<group>"; };
 		4D0317A11D41BB0D003F643B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4D10AF8C1D3BDE150067B4F4 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		4D29C1491D7764470094294A /* ClasspageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClasspageViewController.swift; sourceTree = "<group>"; };
+		4D29C1531D77A2990094294A /* ClassuserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassuserViewController.swift; sourceTree = "<group>"; };
 		4D327DCD1D57F3B30014A3B5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4D327DCF1D60D6D70014A3B5 /* UmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmentViewController.swift; sourceTree = "<group>"; };
+		4D327DD31D60E63A0014A3B5 /* Ument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ument.swift; sourceTree = "<group>"; };
 		4D4F1F571D3C26EF00E7F30F /* TimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
-		4D4F1F591D3C298300E7F30F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4D8E540A1D42D0BE0068B2D9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		4D8E540C1D42D0C60068B2D9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4D8E540E1D42D0CF0068B2D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -139,6 +147,8 @@
 		4DA636AE1CF524E100B00DB0 /* RegisterTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTwoViewController.swift; sourceTree = "<group>"; };
 		4DA636B01CF5300700B00DB0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		4DA636B41CF53CEF00B00DB0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4DC26CD41D6ECF1C000DA05C /* CustomPickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerDialog.swift; sourceTree = "<group>"; };
+		4DDFA61D1D6E965400BE29CC /* OverlappingClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlappingClass.swift; sourceTree = "<group>"; };
 		4DE0AC0D1D458DBD005E9935 /* AddtimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddtimetableViewController.swift; sourceTree = "<group>"; };
 		4DE0AC0F1D45AB92005E9935 /* Localfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localfiles.swift; sourceTree = "<group>"; };
 		4DE0AC111D45AF16005E9935 /* Class_Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class_Time.swift; sourceTree = "<group>"; };
@@ -270,6 +280,7 @@
 		4DA6367B1CF5037100B00DB0 /* Inclass_Bath */ = {
 			isa = PBXGroup;
 			children = (
+				4DC26CD11D6EC9AD000DA05C /* Help */,
 				4DA636B31CF535ED00B00DB0 /* Controller */,
 				4DA636B21CF533F400B00DB0 /* Data */,
 				4D10AF8B1D3BC1580067B4F4 /* Models */,
@@ -308,6 +319,8 @@
 				4DA636B01CF5300700B00DB0 /* User.swift */,
 				4D0317A11D41BB0D003F643B /* Message.swift */,
 				4DE0AC111D45AF16005E9935 /* Class_Time.swift */,
+				4D327DD31D60E63A0014A3B5 /* Ument.swift */,
+				4DDFA61D1D6E965400BE29CC /* OverlappingClass.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -320,11 +333,21 @@
 				4DA636AA1CF51C2D00B00DB0 /* LoginViewController.swift */,
 				4DA636AC1CF51D3800B00DB0 /* RegisterOneViewController.swift */,
 				4DA636AE1CF524E100B00DB0 /* RegisterTwoViewController.swift */,
-				4D4F1F591D3C298300E7F30F /* TabBarController.swift */,
 				4D03179E1D41ADE6003F643B /* MessageViewController.swift */,
 				4DE0AC0D1D458DBD005E9935 /* AddtimetableViewController.swift */,
+				4D327DCF1D60D6D70014A3B5 /* UmentViewController.swift */,
+				4D29C1491D7764470094294A /* ClasspageViewController.swift */,
+				4D29C1531D77A2990094294A /* ClassuserViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		4DC26CD11D6EC9AD000DA05C /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				4DC26CD41D6ECF1C000DA05C /* CustomPickerDialog.swift */,
+			);
+			name = Help;
 			sourceTree = "<group>";
 		};
 		71DCADD50A022F84EE6D4D7A /* Frameworks */ = {
@@ -534,20 +557,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDFA61E1D6E965400BE29CC /* OverlappingClass.swift in Sources */,
 				4DE0AC0E1D458DBD005E9935 /* AddtimetableViewController.swift in Sources */,
 				4DA636AB1CF51C2D00B00DB0 /* LoginViewController.swift in Sources */,
 				4DA6367F1CF5037100B00DB0 /* ViewController.swift in Sources */,
+				4D327DD01D60D6D70014A3B5 /* UmentViewController.swift in Sources */,
 				4DA636B11CF5300700B00DB0 /* User.swift in Sources */,
-				4D4F1F5A1D3C298300E7F30F /* TabBarController.swift in Sources */,
 				4DE0AC121D45AF16005E9935 /* Class_Time.swift in Sources */,
 				4DA6367D1CF5037100B00DB0 /* AppDelegate.swift in Sources */,
 				4DE0AC101D45AB92005E9935 /* Localfiles.swift in Sources */,
 				4DA636AD1CF51D3800B00DB0 /* RegisterOneViewController.swift in Sources */,
 				4D10AF8D1D3BDE150067B4F4 /* Database.swift in Sources */,
 				4D0317A01D41ADE6003F643B /* MessageViewController.swift in Sources */,
+				4D29C1541D77A2990094294A /* ClassuserViewController.swift in Sources */,
 				4D4F1F581D3C26EF00E7F30F /* TimetableViewController.swift in Sources */,
+				4D29C14A1D7764470094294A /* ClasspageViewController.swift in Sources */,
 				4D0317A21D41BB0D003F643B /* Message.swift in Sources */,
 				4DA636AF1CF524E100B00DB0 /* RegisterTwoViewController.swift in Sources */,
+				4DC26CD51D6ECF1C000DA05C /* CustomPickerDialog.swift in Sources */,
+				4D327DD41D60E63A0014A3B5 /* Ument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

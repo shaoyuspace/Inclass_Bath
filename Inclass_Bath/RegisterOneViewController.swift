@@ -41,8 +41,6 @@ class RegisterOneViewController: UIViewController,UITextFieldDelegate {
             vc.Email = User_Email.text
             vc.Password=User_Password.text
         }
-        
-        
     }
 
     @IBAction func NextTapped(sender: AnyObject) {

@@ -1,0 +1,165 @@
+
+/* Class = "UILabel"; text = "Real Name"; ObjectID = "1oN-sg-0vi"; */
+"1oN-sg-0vi.text" = "Real Name";
+
+/* Class = "UIButton"; normalTitle = "LogOut"; ObjectID = "2Ia-Dd-fzC"; */
+"2Ia-Dd-fzC.normalTitle" = "LogOut";
+
+/* Class = "UITabBarItem"; title = "Me"; ObjectID = "4lS-Ul-Cbv"; */
+"4lS-Ul-Cbv.title" = "Me";
+
+/* Class = "UIBarButtonItem"; title = "Last Step"; ObjectID = "7nq-aK-GIC"; */
+"7nq-aK-GIC.title" = "Last Step";
+
+/* Class = "UIViewController"; title = "Message"; ObjectID = "9Pq-rG-65c"; */
+"9Pq-rG-65c.title" = "Message";
+
+/* Class = "UIButton"; normalTitle = "One Student "; ObjectID = "A0R-ji-JVh"; */
+"A0R-ji-JVh.normalTitle" = "One Student ";
+
+/* Class = "UINavigationItem"; title = "Message"; ObjectID = "AWH-ax-L1p"; */
+"AWH-ax-L1p.title" = "Message";
+
+/* Class = "UINavigationItem"; title = "InClass-Login"; ObjectID = "BWY-z8-qd1"; */
+"BWY-z8-qd1.title" = "InClass-Login";
+
+/* Class = "UIButton"; normalTitle = "Check who send this Ument"; ObjectID = "CE1-B4-gQg"; */
+"CE1-B4-gQg.normalTitle" = "Check who send this Ument";
+
+/* Class = "UILabel"; text = "Re-Password"; ObjectID = "EPC-kH-Aat"; */
+"EPC-kH-Aat.text" = "Re-Password";
+
+/* Class = "UITabBarItem"; title = "Ument"; ObjectID = "Ef3-Bc-8Pc"; */
+"Ef3-Bc-8Pc.title" = "Ument";
+
+/* Class = "UINavigationItem"; title = "Your Student"; ObjectID = "F2A-cs-BeH"; */
+"F2A-cs-BeH.title" = "Your Student";
+
+/* Class = "UIViewController"; title = "Me"; ObjectID = "FCQ-Ap-Tqh"; */
+"FCQ-Ap-Tqh.title" = "Me";
+
+/* Class = "UILabel"; text = "UserName"; ObjectID = "FMd-D7-NPS"; */
+"FMd-D7-NPS.text" = "UserName";
+
+/* Class = "UILabel"; text = "Sa"; ObjectID = "H5Z-Yq-eWA"; */
+"H5Z-Yq-eWA.text" = "Sa";
+
+/* Class = "UINavigationItem"; title = "Ument"; ObjectID = "I0T-dP-ICB"; */
+"I0T-dP-ICB.title" = "Ument";
+
+/* Class = "UILabel"; text = "Tu"; ObjectID = "JRx-gY-rjK"; */
+"JRx-gY-rjK.text" = "Tu";
+
+/* Class = "UILabel"; text = "Date of Birth"; ObjectID = "LYo-d2-rOs"; */
+"LYo-d2-rOs.text" = "Date of Birth";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "NCr-we-pzx"; */
+"NCr-we-pzx.text" = "Gender";
+
+/* Class = "UIButton"; normalTitle = "By Iphone"; ObjectID = "Ndg-bn-lon"; */
+"Ndg-bn-lon.normalTitle" = "By Iphone";
+
+/* Class = "UISegmentedControl"; NlG-lu-XKh.segmentTitles[0] = "Man"; ObjectID = "NlG-lu-XKh"; */
+"NlG-lu-XKh.segmentTitles[0]" = "Man";
+
+/* Class = "UISegmentedControl"; NlG-lu-XKh.segmentTitles[1] = "Woman"; ObjectID = "NlG-lu-XKh"; */
+"NlG-lu-XKh.segmentTitles[1]" = "Woman";
+
+/* Class = "UIButton"; normalTitle = ">"; ObjectID = "ODe-cg-M37"; */
+"ODe-cg-M37.normalTitle" = ">";
+
+/* Class = "UILabel"; text = "Th"; ObjectID = "Py2-of-oZC"; */
+"Py2-of-oZC.text" = "Th";
+
+/* Class = "UIButton"; normalTitle = "MyClass"; ObjectID = "REg-u3-IRO"; */
+"REg-u3-IRO.normalTitle" = "MyClass";
+
+/* Class = "UINavigationItem"; title = "Add_TimeTable"; ObjectID = "Rnc-LG-RXl"; */
+"Rnc-LG-RXl.title" = "Add_TimeTable";
+
+/* Class = "UILabel"; text = "Mo"; ObjectID = "TQv-Tg-e8G"; */
+"TQv-Tg-e8G.text" = "Mo";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "VB2-yV-Kd1"; */
+"VB2-yV-Kd1.text" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "VF4-94-zMK"; */
+"VF4-94-zMK.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "18 May 2016-18 May 2016"; ObjectID = "Y5D-me-4eD"; */
+"Y5D-me-4eD.normalTitle" = "18 May 2016-18 May 2016";
+
+/* Class = "UINavigationItem"; title = "Sign-Up"; ObjectID = "acC-ca-bUG"; */
+"acC-ca-bUG.title" = "Sign-Up";
+
+/* Class = "UINavigationItem"; title = "Me"; ObjectID = "aib-aM-SFd"; */
+"aib-aM-SFd.title" = "Me";
+
+/* Class = "UILabel"; text = "We"; ObjectID = "aov-OB-4Vs"; */
+"aov-OB-4Vs.text" = "We";
+
+/* Class = "UITabBarItem"; title = "Message"; ObjectID = "au6-IC-ZRi"; */
+"au6-IC-ZRi.title" = "Message";
+
+/* Class = "UITabBarItem"; title = "TimeTable"; ObjectID = "bor-eC-DgS"; */
+"bor-eC-DgS.title" = "TimeTable";
+
+/* Class = "UINavigationItem"; title = "Ument_Item"; ObjectID = "ecE-fP-q4l"; */
+"ecE-fP-q4l.title" = "Ument_Item";
+
+/* Class = "UIViewController"; title = "Ument"; ObjectID = "hKx-Dh-86B"; */
+"hKx-Dh-86B.title" = "Ument";
+
+/* Class = "UINavigationItem"; title = "Timetable"; ObjectID = "hUp-rf-8so"; */
+"hUp-rf-8so.title" = "Timetable";
+
+/* Class = "UINavigationItem"; title = "Sign-Up"; ObjectID = "ha2-jp-xcP"; */
+"ha2-jp-xcP.title" = "Sign-Up";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "hxN-Ij-NKO"; */
+"hxN-Ij-NKO.text" = "Password";
+
+/* Class = "UILabel"; text = "E-mail"; ObjectID = "iPe-fi-AfU"; */
+"iPe-fi-AfU.text" = "E-mail";
+
+/* Class = "UINavigationItem"; title = "Class_Information"; ObjectID = "nvn-4j-s2O"; */
+"nvn-4j-s2O.title" = "Class_Information";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "oqk-RQ-igW"; */
+"oqk-RQ-igW.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "pa2-aD-Wjx"; */
+"pa2-aD-Wjx.text" = "User Name";
+
+/* Class = "UILabel"; text = "Ument_Item Page"; ObjectID = "phR-ye-aZZ"; */
+"phR-ye-aZZ.text" = "Ument_Item Page";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "rLc-RA-lPe"; */
+"rLc-RA-lPe.normalTitle" = "Logout";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "rhR-W3-LSR"; */
+"rhR-W3-LSR.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "This is Me Page"; ObjectID = "sCj-De-i8w"; */
+"sCj-De-i8w.text" = "This is Me Page";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "t6D-vd-GUa"; */
+"t6D-vd-GUa.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Chat with him"; ObjectID = "to9-Qe-lH3"; */
+"to9-Qe-lH3.normalTitle" = "Chat with him";
+
+/* Class = "UILabel"; text = "Fr"; ObjectID = "u55-d3-3SZ"; */
+"u55-d3-3SZ.text" = "Fr";
+
+/* Class = "UITextField"; text = "This is Class information page "; ObjectID = "vDx-P1-snF"; */
+"vDx-P1-snF.text" = "This is Class information page ";
+
+/* Class = "UILabel"; text = "Su"; ObjectID = "wWf-tB-cKE"; */
+"wWf-tB-cKE.text" = "Su";
+
+/* Class = "UIButton"; normalTitle = "Sign-Up"; ObjectID = "xSl-Xc-wuh"; */
+"xSl-Xc-wuh.normalTitle" = "Sign-Up";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "z42-Sl-3nX"; */
+"z42-Sl-3nX.text" = "1";

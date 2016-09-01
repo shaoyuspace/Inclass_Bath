@@ -12,6 +12,7 @@ class Class_Time: NSObject {
     var stime:NSDate
     var etime:NSDate
     var location:String
+    var Index: Int = -1
     
     //构造方法
     init(name:String,stime:NSDate,etime:NSDate,location:String){
@@ -21,7 +22,19 @@ class Class_Time: NSObject {
         self.location = location;
         super.init()
     }
-    
+    func addIndex(inedex:Int)
+    {
+        Index=inedex
+    }
+    func getIndex()->Int
+    {
+        return Index;
+        
+    }
+    func getlocation()->String
+    {
+        return self.location;
+    }
     func getstime_string()->String
     {
     
